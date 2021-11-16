@@ -1,0 +1,254 @@
+:root {
+  --main-font: "Open Sans", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+
+  /* text color */
+  --main-txt-cl: #555555;
+  --secondary-txt-cl: #ffffff;
+  --title-txt-cl: #303030;
+  --btn-txt-cl: #303030;
+
+  /* colors */
+  --accent-cl: #ff6c00;
+  --main-bg-cl: #ffffff;
+  --secondary-bg-cl: #191c26;
+
+  --black-cl: #000000;
+  --grey-cl: #9da4bd;
+  --grey-cl-alpha: rgba(157, 164, 189, 0.6);
+
+  --linear-gradient: linear-gradient(
+    180deg,
+    #171a24 0%,
+    rgba(23, 26, 36, 0.2) 100%
+  );
+
+  /* others */
+  --border-radius: 25px;
+
+  /*
+  rgba(157, 164, 189, 0.12);
+  rgba(157, 164, 189, 0.4);
+  rgb(247, 247, 247);
+  #111319
+  rgba(25, 28, 38, 0.2); */
+}
+
+/* Open Sans 400 600 700
+  Raleway 700
+*/
+
+/* ======== COMMON STYLES ======== */
+body {
+  font-family: var(--main-font);
+  font-size: 18px;
+  line-height: 1.66;
+  letter-spacing: 0.02em;
+
+  color: var(--main-txt-cl);
+  background-color: var(--main-bg-cl);
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+address {
+  font-style: normal;
+}
+
+.title {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.67;
+  letter-spacing: 0.05em;
+
+  color: var(--title-txt-cl);
+}
+
+.under-title {
+  line-height: 1.39;
+
+  color: var(--title-txt-cl);
+}
+
+.upper-title,
+.social-link,
+.features-descr {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.35;
+
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: var(--title-txt-cl);
+}
+
+.btn {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+
+  color: var(--secondary-txt-cl);
+  background-color: transparent;
+  border: 1px solid var(--accent-cl);
+  border-radius: var(--border-radius);
+
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--accent-cl);
+}
+
+.btn-accent {
+  color: var(--btn-txt-cl);
+}
+
+.btn-accent:hover,
+.btn-accent:focus {
+  color: var(--secondary-txt-cl);
+}
+
+.link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+
+  color: var(--secondary-txt-cl);
+}
+
+.social-link {
+  text-transform: none;
+}
+
+.link:hover,
+.link:focus,
+.social-link:hover,
+.social-link:focus {
+  color: var(--accent-cl);
+}
+
+.text-grey {
+  color: #9da4bd;
+}
+
+.text-accent {
+  color: var(--accent-cl);
+}
+
+.text-white {
+  color: var(--secondary-txt-cl);
+}
+
+/* ======== HEADER ======== */
+.header {
+  background-color: var(--secondary-bg-cl);
+}
+
+/* ======== HERO ======== */
+
+.hero {
+  background-color: var(--secondary-bg-cl);
+}
+
+.hero-title {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.8;
+  letter-spacing: 0.05em;
+
+  color: var(--secondary-txt-cl);
+}
+
+.hero-upper-title {
+  color: var(--grey-cl-alpha);
+}
+
+/* ======== ABOUT-US ======== */
+.about-us-descr {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.86;
+
+  letter-spacing: 0.02em;
+}
+
+/* ======== PRICE ======== */
+.price {
+  background-color: var(--secondary-bg-cl);
+}
+/* стилизация через родителя */
+/* .price-list {
+  color: var(--grey-cl);
+} */
+/* стилизация через дочерний селектор */
+/* .price-list p {
+  color: var(--grey-cl);
+} */
+/* стилизация по классу */
+.price-list-text {
+  color: var(--grey-cl);
+}
+
+/* ======== FEATURES ======== */
+.features {
+}
+.features-numbers {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.36;
+  letter-spacing: 0.05em;
+
+  color: var(--title-txt-cls);
+}
+.features-descr {
+  text-transform: none;
+}
+/* ======== MASTERS ======== */
+.masters p {
+  font-size: 14px;
+  line-height: 1.35;
+}
+/* ======== PORTFOLIO ======== */
+
+/* ======== CONTACTS ======== */
+.contacts {
+  background-color: var(--secondary-bg-cl);
+}
+
+.contacts-link,
+.contact-time {
+  font-size: 18px;
+  line-height: 1.67;
+
+  color: var(--grey-cl);
+}
+
+.contacts-link:hover,
+.contacts-link:focus {
+  color: var(--accent-cl);
+}
+
+/* ======== FOOTER ======== */
+.footer-copyright {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+
+  letter-spacing: 0.2em;
+
+  color: var(--grey-cl);
+}
