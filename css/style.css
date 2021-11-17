@@ -25,18 +25,7 @@
 
   /* others */
   --border-radius: 25px;
-
-  /*
-  rgba(157, 164, 189, 0.12);
-  rgba(157, 164, 189, 0.4);
-  rgb(247, 247, 247);
-  #111319
-  rgba(25, 28, 38, 0.2); */
 }
-
-/* Open Sans 400 600 700
-  Raleway 700
-*/
 
 /* ======== COMMON STYLES ======== */
 body {
@@ -48,21 +37,40 @@ body {
   color: var(--main-txt-cl);
   background-color: var(--main-bg-cl);
 }
-
 ul,
 ol {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
-
 a {
   text-decoration: none;
 }
-
 address {
   font-style: normal;
 }
-
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .title {
+  margin-bottom: 20px;
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 42px;
@@ -71,13 +79,11 @@ address {
 
   color: var(--title-txt-cl);
 }
-
 .under-title {
   line-height: 1.39;
 
   color: var(--title-txt-cl);
 }
-
 .upper-title,
 .social-link,
 .features-descr {
@@ -90,14 +96,16 @@ address {
 
   color: var(--title-txt-cl);
 }
-
+.upper-title {
+  margin-bottom: 20px;
+}
 .btn {
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.09em;
   text-transform: uppercase;
-
+  padding: 12px 20px;
   color: var(--secondary-txt-cl);
   background-color: transparent;
   border: 1px solid var(--accent-cl);
@@ -105,21 +113,17 @@ address {
 
   cursor: pointer;
 }
-
 .btn:hover,
 .btn:focus {
   background-color: var(--accent-cl);
 }
-
 .btn-accent {
   color: var(--btn-txt-cl);
 }
-
 .btn-accent:hover,
 .btn-accent:focus {
   color: var(--secondary-txt-cl);
 }
-
 .link {
   font-weight: 600;
   font-size: 12px;
@@ -128,42 +132,64 @@ address {
 
   color: var(--secondary-txt-cl);
 }
-
 .social-link {
   text-transform: none;
 }
-
 .link:hover,
 .link:focus,
 .social-link:hover,
 .social-link:focus {
   color: var(--accent-cl);
 }
-
 .text-grey {
   color: #9da4bd;
 }
-
 .text-accent {
   color: var(--accent-cl);
 }
-
 .text-white {
   color: var(--secondary-txt-cl);
 }
 
 /* ======== HEADER ======== */
 .header {
+  padding-top: 32px;
+  padding-bottom: 32px;
   background-color: var(--secondary-bg-cl);
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.nav {
+  margin-left: 70px;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+.nav-list-item {
+  margin-right: 40px;
+}
+.nav-list-item:last-child {
+  margin-right: 0px;
+}
+.header-contacts {
+  margin-left: auto;
+}
+.header-contacts .link {
+  margin-right: 40px;
 }
 
 /* ======== HERO ======== */
-
 .hero {
+  padding-top: 206px;
+  padding-bottom: 206px;
+  margin-left: 96px;
   background-color: var(--secondary-bg-cl);
 }
-
 .hero-title {
+  margin-bottom: 20px;
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 72px;
@@ -172,13 +198,71 @@ address {
 
   color: var(--secondary-txt-cl);
 }
-
+.hero-txt {
+  width: 400px;
+}
 .hero-upper-title {
   color: var(--grey-cl-alpha);
 }
+.hero-btn-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+.hero-btn {
+  cursor: pointer;
+  padding-bottom: 8px;
+  margin-right: 16px;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  background-color: transparent;
+  color: rgba(157, 164, 189, 0.6);
+  border: 0;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.6);
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  color: var(--secondary-txt-cl);
+  border-color: inherit;
+}
+.hero-btn:last-child {
+  margin-right: 0;
+}
+.hero-btn:first-child {
+  padding-right: 20px;
+}
+.hero-btn:last-child {
+  padding-left: 20px;
+}
+.active {
+  color: var(--secondary-txt-cl);
+  border-color: inherit;
+}
 
 /* ======== ABOUT-US ======== */
+.about-us {
+  padding: 140px 0 120px;
+}
+.about-us-container {
+  display: flex;
+}
+.about-us-left-side {
+  display: flex;
+  width: 570px;
+  margin-right: 64px;
+}
+.about-us-img + .about-us-img {
+  margin-left: 30px;
+}
+.about-us-right-side {
+  width: 500px;
+}
+.about-us-subtitle {
+  margin-bottom: 20px;
+}
 .about-us-descr {
+  margin-bottom: 40px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.86;
@@ -217,18 +301,20 @@ address {
 .features-descr {
   text-transform: none;
 }
+
 /* ======== MASTERS ======== */
 .masters p {
   font-size: 14px;
   line-height: 1.35;
 }
+
 /* ======== PORTFOLIO ======== */
+
 
 /* ======== CONTACTS ======== */
 .contacts {
   background-color: var(--secondary-bg-cl);
 }
-
 .contacts-link,
 .contact-time {
   font-size: 18px;
@@ -236,7 +322,6 @@ address {
 
   color: var(--grey-cl);
 }
-
 .contacts-link:hover,
 .contacts-link:focus {
   color: var(--accent-cl);

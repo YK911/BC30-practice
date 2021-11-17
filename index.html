@@ -11,64 +11,102 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
+    <!-- section header -->
     <header class="header">
-      <a href="">
-        <img src="./img/header/logo.svg" alt="логотип" width="65" height="55" />
-      </a>
-      <nav class="nav">
-        <ul>
-          <li><a class="link" href="">О нас</a></li>
-          <li><a class="link" href="">Услуги и цены</a></li>
-          <li><a class="link" href="">Мастера</a></li>
-          <li><a class="link" href="">Контакты</a></li>
-        </ul>
-      </nav>
-      <div>
-        <a class="link" href="tel:+380441111111">+38 044 111 11 11</a>
-        <button class="btn" type="button">онлайн-запись</button>
+      <div class="container header-container">
+        <a href="">
+          <img
+            src="./img/header/logo.svg"
+            alt="логотип"
+            width="65"
+            height="55"
+          />
+        </a>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-list-item"><a class="link" href="">О нас</a></li>
+            <li class="nav-list-item">
+              <a class="link" href="">Услуги и цены</a>
+            </li>
+            <li class="nav-list-item"><a class="link" href="">Мастера</a></li>
+            <li class="nav-list-item"><a class="link" href="">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="header-contacts">
+          <a class="link" href="tel:+380441111111">+38 044 111 11 11</a>
+          <button class="btn" type="button">онлайн-запись</button>
+        </div>
       </div>
     </header>
     <main>
       <!-- section hero -->
       <section class="hero">
-        <ul>
-          <li><a class="social-link" href="">Instagram</a></li>
-          <li><a class="social-link" href="">Youtube</a></li>
-        </ul>
-        <p class="upper-title" lang="en">A hair salon for men in Kyiv</p>
-        <h1 class="hero-title" lang="en">BarberShop</h1>
-        <p class="text-grey">
-          Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со
-          вкусом.
-        </p>
-        <div>
-          <button type="button">Назад</button>
-          <button type="button">Вперед</button>
+        <div class="container">
+          <ul>
+            <li><a class="social-link" href="">Instagram</a></li>
+            <li><a class="social-link" href="">Youtube</a></li>
+          </ul>
+
+          <p class="upper-title" lang="en">A hair salon for men in Kyiv</p>
+          <h1 class="hero-title" lang="en">BarberShop</h1>
+          <p class="text-grey hero-txt">
+            Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и
+            со вкусом.
+          </p>
+          <div class="hero-btn-wrapper">
+            <button class="hero-btn" type="button">Назад</button>
+            <button class="hero-btn active" type="button">Вперед</button>
+          </div>
         </div>
       </section>
       <!-- section about-us -->
       <section class="about-us">
-        <div>
-          <img src="./img/about-us/img_1.jpg" alt="" width="270" height="445" />
-          <img src="./img/about-us/img_2.jpg" alt="" width="270" height="445" />
+        <div class="container about-us-container">
+          <div class="about-us-left-side">
+            <img
+              class="about-us-img"
+              src="./img/about-us/img_1.jpg"
+              alt=""
+              width="270"
+              height="445"
+            />
+            <img
+              class="about-us-img"
+              src="./img/about-us/img_2.jpg"
+              alt=""
+              width="270"
+              height="445"
+            />
+          </div>
+          <div class="about-us-right-side">
+            <p class="upper-title">О нас</p>
+            <h2 class="title">Лучший Барбершоп твоего города</h2>
+            <p class="about-us-subtitle">
+              Если ты хочешь добавить в свой образ больше уверенности – тебе
+              точно к нам.
+            </p>
+            <p class="about-us-descr">
+              Мы команда, которая никогда не останавливается на достигнутом и
+              жаждет перемен. И когда ты попадешь в руки нашего мастера, то уже
+              никогда не сможешь быть прежним. Мы команда, которая всегда с
+              клиентами "на одной волне". Поэтому, мы всегда готовы
+              усовершенствовать каждого, кто к нам приходит!
+            </p>
+
+            <button class="btn btn-accent" type="button">онлайн-запись</button>
+          </div>
         </div>
-        <p class="upper-title">О НАС</p>
-        <h2 class="title">Лучший Барбершоп твоего города</h2>
-        <p>
-          Если ты хочешь добавить в свой образ больше уверенности – тебе точно к
-          нам.
-        </p>
-        <p class="about-us-descr">
-          Мы команда, которая никогда не останавливается на достигнутом и жаждет
-          перемен. И когда ты попадешь в руки нашего мастера, то уже никогда не
-          сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной
-          волне". Поэтому, мы всегда готовы усовершенствовать каждого, кто к нам
-          приходит!
-        </p>
-        <button class="btn btn-accent" type="button">онлайн-запись</button>
       </section>
       <!-- section price -->
       <section class="price">
