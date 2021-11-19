@@ -219,6 +219,11 @@ img {
   padding-bottom: 206px;
   margin-left: 96px;
   background-color: var(--secondary-bg-cl);
+
+  background-image: url(../img/hero/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .hero-title {
   margin-bottom: 20px;
@@ -279,6 +284,18 @@ img {
 .about-us-container {
   display: flex;
 }
+.about-us-container:before {
+  display: block;
+  width: 570px;
+  height: 490px;
+  content: '';
+  margin-right: 30px;
+
+  background-image: url(../img/about-us/img_1.jpg), url(../img/about-us/img_2.jpg);
+  background-repeat: no-repeat;
+  background-position: top left, top right;
+}
+
 .about-us-left-side {
   display: flex;
   width: 570px;
