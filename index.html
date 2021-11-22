@@ -18,14 +18,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <!-- section header -->
-    <header class="header">
+    <header class="header fixed" data-header>
       <div class="container header-container">
-        <a href="">
+        <a class="header-logo" href="">
           <img
             src="./img/header/logo.svg"
             alt="логотип"
@@ -35,12 +35,18 @@
         </a>
         <nav class="nav">
           <ul class="nav-list">
-            <li class="nav-list-item"><a class="link" href="">О нас</a></li>
             <li class="nav-list-item">
-              <a class="link" href="">Услуги и цены</a>
+              <a class="link" href="#about-us">О нас</a>
             </li>
-            <li class="nav-list-item"><a class="link" href="">Мастера</a></li>
-            <li class="nav-list-item"><a class="link" href="">Контакты</a></li>
+            <li class="nav-list-item">
+              <a class="link" href="#price">Услуги и цены</a>
+            </li>
+            <li class="nav-list-item">
+              <a class="link" href="#masters">Мастера</a>
+            </li>
+            <li class="nav-list-item">
+              <a class="link" href="#contacts">Контакты</a>
+            </li>
           </ul>
         </nav>
         <div class="header-contacts">
@@ -53,9 +59,13 @@
       <!-- section hero -->
       <section class="hero">
         <div class="container">
-          <ul>
-            <li><a class="social-link" href="">Instagram</a></li>
-            <li><a class="social-link" href="">Youtube</a></li>
+          <ul class="socials-list">
+            <li class="socials-item">
+              <a class="socials-link" href="">Instagram</a>
+            </li>
+            <li class="socials-item">
+              <a class="socials-link" href="">Youtube</a>
+            </li>
           </ul>
 
           <p class="upper-title" lang="en">A hair salon for men in Kyiv</p>
@@ -71,7 +81,7 @@
         </div>
       </section>
       <!-- section about-us -->
-      <section class="about-us">
+      <section class="about-us" id="about-us">
         <div class="container about-us-container">
           <!-- <div class="about-us-left-side">
             <img
@@ -109,12 +119,16 @@
         </div>
       </section>
       <!-- section price -->
-      <section class="price">
+      <section class="price" id="price">
         <div class="container">
           <p class="upper-title">Проведи время в компании лучших мастеров</p>
           <h2 class="title text-white">Услуги и цены</h2>
           <ul class="price-list">
-            <li class="price-list-item">
+            <li
+              class="price-list-item"
+              data-aos="fade-right"
+              data-aos-easing="ease-in"
+            >
               <ul class="price-inner-list">
                 <li class="price-inner-item">
                   <p class="price-list-text">Мужская стрижка</p>
@@ -134,7 +148,11 @@
                 </li>
               </ul>
             </li>
-            <li class="price-list-item">
+            <li
+              class="price-list-item"
+              data-aos="fade-left"
+              data-aos-easing="ease-in"
+            >
               <ul class="price-inner-list">
                 <li class="price-inner-item">
                   <p class="price-list-text">Стрижка усов</p>
@@ -193,7 +211,7 @@
         </div>
       </section>
       <!-- section masters -->
-      <section class="masters">
+      <section class="masters" id="masters">
         <div class="container">
           <p class="upper-title">для настоящих ценителей атмосферы</p>
           <h2 class="title">Наши мастера</h2>
@@ -212,16 +230,16 @@
                 <ul class="masters-social-links">
                   <li class="masters-social-item">
                     <a class="masters-social-link" href="">
-                     <svg class="masters-social-icon" width="44" height="44">
-                       <use href="./img/sprite.svg#icon-instagram"></use>
-                     </svg>
+                      <svg class="masters-social-icon" width="44" height="44">
+                        <use href="./img/sprite.svg#icon-instagram"></use>
+                      </svg>
                     </a>
                   </li>
                   <li class="masters-social-item">
                     <a class="masters-social-link" href="">
-                     <svg class="masters-social-icon" width="44" height="44">
-                       <use href="./img/sprite.svg#icon-twitter"></use>
-                     </svg>
+                      <svg class="masters-social-icon" width="44" height="44">
+                        <use href="./img/sprite.svg#icon-twitter"></use>
+                      </svg>
                     </a>
                   </li>
                   <li class="masters-social-item">
@@ -233,9 +251,9 @@
                   </li>
                   <li class="masters-social-item">
                     <a class="masters-social-link" href="">
-                     <svg class="masters-social-icon" width="44" height="44">
-                       <use href="./img/sprite.svg#icon-linkedin"></use>
-                     </svg>
+                      <svg class="masters-social-icon" width="44" height="44">
+                        <use href="./img/sprite.svg#icon-linkedin"></use>
+                      </svg>
                     </a>
                   </li>
                 </ul>
@@ -255,22 +273,30 @@
                 <ul class="masters-social-links">
                   <li class="masters-social-item">
                     <a class="masters-social-link" href="">
-                      <img src="./img/masters/icon-insta.png" alt="Instagram" />
+                      <svg class="masters-social-icon" width="44" height="44">
+                        <use href="./img/sprite.svg#icon-instagram"></use>
+                      </svg>
                     </a>
                   </li>
                   <li class="masters-social-item">
                     <a class="masters-social-link" href="">
-                      <img src="./img/masters/icon-fb.png" alt="Meta" />
+                      <svg class="masters-social-icon" width="44" height="44">
+                        <use href="./img/sprite.svg#icon-twitter"></use>
+                      </svg>
                     </a>
                   </li>
                   <li class="masters-social-item">
                     <a class="masters-social-link" href="">
-                      <img src="./img/masters/icon-twitter.png" alt="Twitter" />
+                      <svg class="masters-social-icon" width="44" height="44">
+                        <use href="./img/sprite.svg#icon-facebook"></use>
+                      </svg>
                     </a>
                   </li>
                   <li class="masters-social-item">
                     <a class="masters-social-link" href="">
-                      <img src="./img/masters/icon-link.png" alt="LinkedIn" />
+                      <svg class="masters-social-icon" width="44" height="44">
+                        <use href="./img/sprite.svg#icon-linkedin"></use>
+                      </svg>
                     </a>
                   </li>
                 </ul>
@@ -290,22 +316,30 @@
                 <ul class="masters-social-links">
                   <li class="masters-social-item">
                     <a class="masters-social-link" href="">
-                      <img src="./img/masters/icon-insta.png" alt="Instagram" />
+                      <svg class="masters-social-icon" width="44" height="44">
+                        <use href="./img/sprite.svg#icon-instagram"></use>
+                      </svg>
                     </a>
                   </li>
                   <li class="masters-social-item">
                     <a class="masters-social-link" href="">
-                      <img src="./img/masters/icon-fb.png" alt="Meta" />
+                      <svg class="masters-social-icon" width="44" height="44">
+                        <use href="./img/sprite.svg#icon-twitter"></use>
+                      </svg>
                     </a>
                   </li>
                   <li class="masters-social-item">
                     <a class="masters-social-link" href="">
-                      <img src="./img/masters/icon-twitter.png" alt="Twitter" />
+                      <svg class="masters-social-icon" width="44" height="44">
+                        <use href="./img/sprite.svg#icon-facebook"></use>
+                      </svg>
                     </a>
                   </li>
                   <li class="masters-social-item">
                     <a class="masters-social-link" href="">
-                      <img src="./img/masters/icon-link.png" alt="LinkedIn" />
+                      <svg class="masters-social-icon" width="44" height="44">
+                        <use href="./img/sprite.svg#icon-linkedin"></use>
+                      </svg>
                     </a>
                   </li>
                 </ul>
@@ -322,43 +356,78 @@
             На латинском языке “барба” означает “борода”
           </p>
           <ul class="our-work grid">
-            <li class="grid-item">
+            <li
+              class="grid-item"
+              data-label="Мужская стрижка"
+              data-aos="zoom-in-up"
+            >
               <img
                 src="./img/portfolio/preview-1.jpg"
                 alt="Пример работы мастера"
                 width="270"
                 height="360"
               />
+              <p class="our-work-description">
+                Давно выяснено, что при оценке дизайна и композиции читаемый
+                текст мешает сосредоточиться.
+              </p>
             </li>
-            <li class="grid-item">
+            <li
+              class="grid-item"
+              data-label="Стрижка бороды"
+              data-aos="zoom-in-up"
+              data-aos-delay="250"
+            >
               <img
                 src="./img/portfolio/preview-2.jpg"
                 alt="Пример работы мастера"
                 width="270"
                 height="360"
               />
+              <p class="our-work-description">
+                Давно выяснено, что при оценке дизайна и композиции читаемый
+                текст мешает сосредоточиться.
+              </p>
             </li>
-            <li class="grid-item">
+            <li
+              class="grid-item"
+              data-label="Стрижка усов"
+              data-aos="zoom-in-up"
+              data-aos-delay="450"
+            >
               <img
                 src="./img/portfolio/preview-3.jpg"
                 alt="Пример работы мастера"
                 width="270"
                 height="360"
               />
+              <p class="our-work-description">
+                Давно выяснено, что при оценке дизайна и композиции читаемый
+                текст мешает сосредоточиться.
+              </p>
             </li>
-            <li class="grid-item">
+            <li
+              class="grid-item"
+              data-label="Детская стрижка"
+              data-aos="zoom-in-up"
+              data-aos-delay="650"
+            >
               <img
                 src="./img/portfolio/preview-4.jpg"
                 alt="Пример работы мастера"
                 width="270"
                 height="360"
               />
+              <p class="our-work-description">
+                Давно выяснено, что при оценке дизайна и композиции читаемый
+                текст мешает сосредоточиться.
+              </p>
             </li>
           </ul>
         </div>
       </section>
       <!-- section contacts -->
-      <section class="contacts">
+      <section class="contacts" id="contacts">
         <div class="container contacts-container grid">
           <div class="contacts-leftside grid-item">
             <h2 class="title text-white">Онлайн-запись</h2>
@@ -402,13 +471,22 @@
         <p class="footer-copyright">&copy; Copyright 2021</p>
         <ul class="social-list">
           <li class="social-item">
-            <a class="social-link" href="">Instagram</a>
+            <a class="socials-link" href="">Instagram</a>
           </li>
           <li class="social-item">
-            <a class="social-link" href="">Youtube</a>
+            <a class="socials-link" href="">Youtube</a>
           </li>
         </ul>
       </div>
     </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/header.js"></script>
   </body>
 </html>
