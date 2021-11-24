@@ -5,6 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BarberShop</title>
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./img/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./img/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- Style files -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -445,7 +472,18 @@
         <div class="container contacts-container grid">
           <div class="contacts-leftside grid-item">
             <h2 class="title text-white">Онлайн-запись</h2>
-            <form class="contacts-form" action="">
+            <form class="contacts-form js-form" autocomplete="off">
+              <div class="field-group">
+                <div class="field">
+                  <input class="contact-input" type="text" id="name" placeholder=" " />
+                  <label class="contact-label" for="name"> Имя* </label>
+                </div>
+                <div class="field">
+                  <input class="contact-input" type="tel" id="phone" placeholder=" "/>
+                  <label class="contact-label" for="phone"> Телефон* </label>
+                </div>
+              </div>
+              <textarea class="contact-message" name="message" cols="30" placeholder="сообщение"></textarea>
               <button class="btn" type="submit">отправить</button>
             </form>
           </div>
@@ -494,7 +532,7 @@
       </div>
     </footer>
     <!-- modal -->
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button
           class="modal-btn"
@@ -518,5 +556,6 @@
     <script src="./js/script.js"></script>
     <script src="./js/header.js"></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/input-value.js"></script>
   </body>
 </html>
