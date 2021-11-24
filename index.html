@@ -475,15 +475,36 @@
             <form class="contacts-form js-form" autocomplete="off">
               <div class="field-group">
                 <div class="field">
-                  <input class="contact-input" type="text" id="name" placeholder=" " />
+                  <input
+                    class="contact-input"
+                    type="text"
+                    id="name"
+                    placeholder=" "
+                  />
                   <label class="contact-label" for="name"> Имя* </label>
                 </div>
                 <div class="field">
-                  <input class="contact-input" type="tel" id="phone" placeholder=" "/>
+                  <input
+                    class="contact-input"
+                    type="tel"
+                    id="phone"
+                    placeholder=" "
+                  />
                   <label class="contact-label" for="phone"> Телефон* </label>
                 </div>
               </div>
-              <textarea class="contact-message" name="message" cols="30" placeholder="сообщение"></textarea>
+              <textarea
+                class="contact-message"
+                name="message"
+                cols="30"
+                placeholder="сообщение"
+              ></textarea>
+              <label class="privacy">
+                <input class="visually-hidden checkbox" type="checkbox" name="" id="" />
+                <div class="privacy-checkbox"></div>
+                <p class="privacy-text">Соглашаюсь с рассылкой и принимаю</p>
+                <a href="" class="privacy-link">Условия договора</a>
+              </label>
               <button class="btn" type="submit">отправить</button>
             </form>
           </div>
