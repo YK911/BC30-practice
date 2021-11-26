@@ -1,0 +1,48 @@
+.header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: fixed;
+  width: 100vw;
+  background-color: transparent;
+  z-index: 999;
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    position: absolute;
+    top: 25%;
+    left: 15px;
+  }
+
+  &__contacts {
+    margin-left: auto;
+
+    .link {
+      margin-right: 40px;
+    }
+  }
+}
+.header-bg-color {
+  background-color: var(--secondary-bg-cl);
+  transition: background-color 500ms linear;
+}
+
+.nav {
+  margin-left: 70px;
+
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__list-item {
+    margin-right: 40px;
+
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+}

@@ -1,0 +1,178 @@
+/* ======== COMMON STYLES ======== */
+body {
+  font-family: var(--main-font);
+  font-size: 18px;
+  line-height: 1.66;
+  letter-spacing: 0.02em;
+
+  color: var(--main-txt-cl);
+  background-color: var(--main-bg-cl);
+  overflow-x: hidden;
+}
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+address {
+  font-style: normal;
+}
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* сетка для колекции элементов */
+.grid {
+  display: flex;
+  /* margin-right: calc(-1 * var(--indent));
+    margin-bottom: calc(-1 * var(--indent)); */
+  flex-wrap: wrap;
+  gap: var(--indent);
+}
+.grid-item {
+  flex-basis: calc(
+    (100% - calc(var(--item) - 1) * var(--indent)) / var(--item)
+  );
+  /* margin-right: var(--indent);
+    margin-bottom: var(--indent); */
+}
+.title {
+  margin-bottom: 20px;
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.67;
+  letter-spacing: 0.05em;
+
+  color: var(--title-txt-cl);
+}
+.under-title {
+  line-height: 1.39;
+
+  color: var(--title-txt-cl);
+}
+.upper-title,
+.socials-link,
+.features-descr {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.35;
+
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: var(--title-txt-cl);
+}
+.upper-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.upper-title::before {
+  display: inline-block;
+  width: 60px;
+  height: 1px;
+  content: "";
+
+  margin-right: 20px;
+
+  background-color: var(--btn-txt-cl);
+}
+.btn {
+  padding: 12px 20px;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--secondary-txt-cl);
+
+  background-color: transparent;
+  border: 1px solid var(--accent-cl);
+  /* border-radius: var(--border-radius); */
+
+  cursor: pointer;
+  /* different ways to set the transition property */
+  /* transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn:hover,
+.btn:focus {
+  background-color: var(--accent-cl);
+}
+.btn-accent {
+  color: var(--btn-txt-cl);
+}
+.btn-accent:hover,
+.btn-accent:focus {
+  color: var(--secondary-txt-cl);
+}
+.link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+
+  color: var(--secondary-txt-cl);
+
+  transition: color 300ms ease-in;
+}
+.socials-link {
+  display: block;
+  text-transform: none;
+
+  transition: color 300ms ease-in;
+}
+.link:hover,
+.link:focus,
+.socials-link:hover,
+.socials-link:focus {
+  color: var(--accent-cl);
+}
+/* text colors */
+.text-grey {
+  color: #9da4bd;
+}
+.text-accent {
+  color: var(--accent-cl);
+}
+.text-white {
+  color: var(--secondary-txt-cl);
+}
+.page {
+  position: relative;
+}
+/* hide elements */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
