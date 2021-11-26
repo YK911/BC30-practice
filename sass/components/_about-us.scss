@@ -1,0 +1,36 @@
+/* ======== ABOUT-US ======== */
+.about-us {
+  padding: 140px 0 120px;
+
+  &-container {
+    display: flex;
+
+    &:before {
+      display: block;
+      width: 570px;
+      height: 490px;
+      content: "";
+      margin-right: 30px;
+
+      background-image: url(../img/about-us/img_1.jpg),
+        url(../img/about-us/img_2.jpg);
+      background-repeat: no-repeat;
+      background-position: top left, top right;
+    }
+  }
+
+  &-right-side {
+    width: 500px;
+  }
+
+  &-subtitle {
+    margin-bottom: 20px;
+  }
+  &-descr {
+    margin-bottom: 40px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.86;
+    letter-spacing: 0.02em;
+  }
+}

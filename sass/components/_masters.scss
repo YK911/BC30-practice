@@ -1,0 +1,54 @@
+/* ======== MASTERS ======== */
+.masters {
+  padding-top: 130px;
+  padding-bottom: 130px;
+  background-color: #f7f7f7;
+}
+.masters p {
+  font-size: 14px;
+  line-height: 1.35;
+}
+.masters-list {
+  --item: 3;
+}
+.masters-item {
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+.masters-wrapper {
+  padding: 30px;
+  text-align: center;
+}
+.masters-wrapper .under-title {
+  margin-bottom: 8px;
+}
+.masters-wrapper .text-accent {
+  margin-bottom: 30px;
+}
+.masters-social-links {
+  display: flex;
+  justify-content: center;
+}
+.masters-social-item:not(:last-child) {
+  margin-right: 10px;
+}
+.masters-social-link {
+  display: block;
+  background-color: var(--main-bg-cl);
+  border-radius: 50%;
+  transition: background-color 0.25s linear;
+}
+.masters-social-link:hover {
+  background-color: var(--main-txt-cl);
+}
+.masters-social-icon {
+  display: block;
+  fill: var(--main-txt-cl);
+  transform: rotate(0);
+  transition: fill 0.25s linear, transform 0.4s ease-in;
+}
+.masters-social-icon:hover {
+  fill: var(--accent-cl);
+  transform: rotate(360deg);
+}
